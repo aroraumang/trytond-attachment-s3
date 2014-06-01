@@ -1,0 +1,5 @@
+[run]
+source = trytond.modules.attachment_s3
+
+[report]
+omit = */tests/*, */fabfile.py

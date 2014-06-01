@@ -1,6 +1,6 @@
 #! /usr/bin/env python
-#This file is part of Tryton.  The COPYRIGHT file at the top level of
-#this repository contains the full copyright notices and license terms.
+# This file is part of Tryton.  The COPYRIGHT file at the top level of
+# this repository contains the full copyright notices and license terms.
 import re
 import os
 from setuptools import setup
@@ -50,8 +50,9 @@ setup(
         'trytond.modules.attachment_s3.tests',
     ],
     package_data={
-        'trytond.modules.attachment_s3': info.get('xml', []) +
-            ['tryton.cfg', 'locale/*.po', '*.odt', 'icons/*.svg'],
+        'trytond.modules.attachment_s3': info.get('xml', []) + [
+            'tryton.cfg', 'locale/*.po', '*.odt', 'icons/*.svg'
+        ],
     },
     classifiers=[
         'Development Status :: 5 - Production/Stable',
